@@ -4,4 +4,4 @@ RUN apt-get update && \
   cd /opt && \
   git clone https://gitlab.eurecom.fr/oai/openair-cn.git
   
-RUN openair-cn/SCRIPTS/build_hss -i -F
+RUN cd /opt/openair-cn/SCRIPTS && ./build_hss -i -F
